@@ -20,27 +20,19 @@ $mejlErr = $pswErr = $imeErr = $prezErr = $prijavaErr = "";
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.php">Pocetna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
-                        </li>
-                    </ul>
-                    <button id="reg" onclick="document.getElementById('id02').style.display='block'">Registruj se</button>
-                    <button id="log" onclick="document.getElementById('id01').style.display='block'">Prijavi se</button>
+                        
+                    
+                    <button id="reg" onclick="document.getElementById('id01').style.display='block'">Registruj se</button><!-- ako pritisne na dugme regustrij se otvara prvi modul -->
+                    <button id="log" onclick="document.getElementById('id02').style.display='block'">Prijavi se</button><!-- ako pritisne na dugme regustrij se otvara drugi modul-->
+                </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    
 
     <!-- modul 1 -->
     <div id="id01" class="modal">
@@ -48,28 +40,6 @@ $mejlErr = $pswErr = $imeErr = $prezErr = $prijavaErr = "";
         <form class="modal-content animate" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <h2>Login</h2>
-            </div>
-
-            <div class="container">
-                <label for="email"><b>E mail:</b></label>
-                <input type="email" placeholder="Unesi email" name="emailp" required>
-
-                <label for="psw"><b>Password: </b></label>
-                <input type="password" placeholder="Unesi sifru" name="passwordp" required>
-
-                <input id="prijava" type="submit" name="prijava" value="Prijavi se" />
-            </div>
-            <?php echo $prijavaErr; ?>
-        </form>
-    </div>
-
-    <!-- modul 2 -->
-    <div id="id02" class="modal">
-
-        <form class="modal-content animate" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <h2>Register</h2>
             </div>
 
