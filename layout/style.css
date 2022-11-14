@@ -4,15 +4,25 @@
     box-sizing: border-box;
 }
 
-header nav {
-    background-color: #6C3333;
+body{
+    background: #C0C0C0;
 }
 
+#prozor{
+    background-color: #d3d3d3;
+}
+
+header nav {
+    background-color: #660000;
+    font-weight: bolder;
+}
+/*style za dugme za reg*/
 #reg {
-    border: 2px solid  #303ca7;
+    border: 2px solid black;
     color: black;
-    background-color:  #4F7D38;
+    background-color: white;
     transition: .2s;
+    font-size: 13px;
     font-weight: bold;
     padding: 10px 20px;
     margin: 10px;
@@ -20,13 +30,29 @@ header nav {
 
 #reg:hover {
     color: black;
-    background-color: #5AFF09;
+    background-color: transparent;
+}
+/*style za dropdown prijava*/
+#dropdown{
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    transition: .2s;
+    font-weight: bold;
+
+    padding: 10px 20px;
+    margin: 10px;
 }
 
-#log {
-    border: 2px solid  #303ca7;
+#dropdown:hover {
     color: black;
-    background-color:  #4F7D38;
+    background-color: #d3d3d3;
+}
+/*style za dugme za login*/
+#log {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
     transition: .2s;
     font-weight: bold;
     padding: 10px 20px;
@@ -35,7 +61,22 @@ header nav {
 
 #log:hover {
     color: black;
-    background-color: #5AFF09;
+    background-color: transparent;
+}
+/*style za dugme za logout*/
+#logout {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    transition: .2s;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+#logout:hover {
+    color: black;
+    background-color: #d3d3d3;
 }
 
 
@@ -43,6 +84,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Full-width input fields */
 input[type=email],
 input[type=text],
 input[type=password] {
@@ -54,13 +96,14 @@ input[type=password] {
     box-sizing: border-box;
 }
 
-
+/* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
 }
 
+/* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
@@ -68,12 +111,14 @@ input[type=password] {
 }
 
 img.avatar {
-    width: 40%;
+    width: 30%;
     border-radius: 50%;
 }
 
 .container {
     padding: 16px;
+    width: 90%;
+    text-align: left;
 }
 
 span.password {
@@ -81,37 +126,25 @@ span.password {
     padding-top: 16px;
 }
 
-/* The Modal (background) */
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
     padding-top: 60px;
 }
 
-/* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
-    /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
+    width: 30%;
 }
 
 /* The Close Button (x) */
@@ -156,12 +189,22 @@ span.password {
     }
 }
 
+/* Change styles for span and cancel button on extra small screens */
+/* @media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
 
+    .cancelbtn {
+        width: 100%;
+    }
+} */
 
 #prijava {
-    border: 2px solid  #303ca7;
+    border: 2px solid black;
     color: black;
-    background-color:  #4F7D38;
+    background-color: d3d3d3;
     transition: .2s;
     font-weight: bold;
     padding: 10px 20px;
@@ -170,6 +213,15 @@ span.password {
 
 #prijava:hover {
     color: black;
-    background-color: #5AFF09;
+    background-color: transparent;
 }
 
+footer p {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #d3d3d3;
+}
